@@ -853,3 +853,1034 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.3ms)
 
 
+Started DELETE "/posts/1" for 127.0.0.1 at 2020-01-13 16:06:41 -0300
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rz+m7K75uSqeEgvOlht1wZN/BV8FqTTzXSHRlcqBc61uqPSnAmvktTTiT2LNRaprnMI/5A+Wd/k7PWn7RqLgLQ==", "id"=>"1"}
+  [1m[36mPost Load (2.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:57
+  [1m[36mPost Destroy (26.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/posts_controller.rb:57
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:57
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 185ms (ActiveRecord: 39.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-13 16:06:41 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 475ms (Views: 467.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/posts/2" for 127.0.0.1 at 2020-01-13 16:06:44 -0300
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cNLPv0Cjn8on7ggbMhg9pa+h8tC2mnZ0u0Tge82WhW6xRZ307DHCVY0eTLdpRuIPoBzIa7ylNX7dWFgVQbUW7g==", "id"=>"2"}
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:57
+  [1m[36mPost Destroy (0.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/posts_controller.rb:57
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:57
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 38ms (ActiveRecord: 15.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-13 16:06:44 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 94ms (Views: 88.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-14 10:57:57 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 377ms (Views: 360.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2020-01-14 10:58:08 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-14 10:58:11 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-14 10:58:12 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2020-01-14 14:36:29 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 216ms (Views: 207.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-14 14:36:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135:in `call_app'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:30:in `block in call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `catch'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/usr/lib/ruby/vendor_ruby/rack/method_override.rb:22:in `call'
+/usr/lib/ruby/vendor_ruby/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+/usr/lib/ruby/vendor_ruby/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:225:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:658:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:472:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:332:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/post/new" for 127.0.0.1 at 2020-01-14 14:36:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/post/new"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135:in `call_app'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:30:in `block in call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `catch'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/usr/lib/ruby/vendor_ruby/rack/method_override.rb:22:in `call'
+/usr/lib/ruby/vendor_ruby/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+/usr/lib/ruby/vendor_ruby/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:225:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:658:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:472:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:332:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 14:36:55 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 65ms (Views: 49.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-14 14:36:57 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (33.4ms)
+  Rendered posts/new.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 97ms (Views: 79.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-01-14 14:37:05 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"us0THPJn/c3JoHVDjUex/S4LCxkIbwXGBhzo2pfc/l7D1hHxhy9C6+nn4eZfjOQtYxow/BcimJgNlIUWDGAlBA==", "post"=>{"title"=>"first", "content"=>"post\r\n"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30
+  [1m[36mPost Create (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "first"], ["content", "post\r\n"], ["created_at", "2020-01-14 17:37:05.945664"], ["updated_at", "2020-01-14 17:37:05.945664"]]
+  ↳ app/controllers/posts_controller.rb:30
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 20ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2020-01-14 14:37:05 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 47ms (Views: 36.6ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("id", "title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 1], ["title", "new"], ["content", "content"], ["created_at", "2020-01-14 17:43:30.636921"], ["updated_at", "2020-01-14 17:43:30.636921"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2020-01-14 17:46:21.474275"], ["updated_at", "2020-01-14 17:46:21.474275"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Update (0.6ms)[0m  [1m[33mUPDATE "posts" SET "id" = ?, "title" = ?, "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["id", 5], ["title", "something"], ["content", "something else"], ["updated_at", "2020-01-14 17:47:22.128273"], ["id", 4]]
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/posts/3" for 127.0.0.1 at 2020-01-14 14:47:37 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 71ms (Views: 62.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2020-01-14 14:47:40 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:67
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 69ms (Views: 63.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 14:47:42 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/posts/1/edit" for 127.0.0.1 at 2020-01-14 14:56:56 -0300
+  
+SyntaxError (/home/kaibutsu/crumblr/app/controllers/posts_controller.rb:27: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+...st was successfully created.' }
+...                              ^
+/home/kaibutsu/crumblr/app/controllers/posts_controller.rb:29: syntax error, unexpected '}', expecting keyword_end
+        render :new }
+                    ^):
+  
+app/controllers/posts_controller.rb:27: syntax error, unexpected tSTRING_DEND, expecting keyword_end
+app/controllers/posts_controller.rb:29: syntax error, unexpected '}', expecting keyword_end
+Started GET "/posts/1/edit" for 127.0.0.1 at 2020-01-14 14:57:20 -0300
+  
+SyntaxError (/home/kaibutsu/crumblr/app/controllers/posts_controller.rb:43: syntax error, unexpected keyword_end, expecting end-of-input
+  end
+  ^~~):
+  
+app/controllers/posts_controller.rb:43: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/posts/1/edit" for 127.0.0.1 at 2020-01-14 14:57:57 -0300
+  
+SyntaxError (/home/kaibutsu/crumblr/app/controllers/posts_controller.rb:50: syntax error, unexpected keyword_end, expecting end-of-input
+  end
+  ^~~):
+  
+app/controllers/posts_controller.rb:50: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/posts/1/edit" for 127.0.0.1 at 2020-01-14 14:58:06 -0300
+  
+SyntaxError (/home/kaibutsu/crumblr/app/controllers/posts_controller.rb:62: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/posts_controller.rb:62: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/posts/1/edit" for 127.0.0.1 at 2020-01-14 14:58:12 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:55
+Completed 404 Not Found in 5ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=1):
+  
+app/controllers/posts_controller.rb:55:in `set_post'
+Started GET "/posts/" for 127.0.0.1 at 2020-01-14 14:59:05 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2020-01-14 14:59:10 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:55
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (19.5ms)
+  Rendered posts/edit.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 56ms (Views: 50.3ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/posts/3" for 127.0.0.1 at 2020-01-14 14:59:15 -0300
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for PostsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+/usr/lib/ruby/vendor_ruby/rack/tempfile_reaper.rb:15:in `call'
+/usr/lib/ruby/vendor_ruby/rack/etag.rb:25:in `call'
+/usr/lib/ruby/vendor_ruby/rack/conditional_get.rb:38:in `call'
+/usr/lib/ruby/vendor_ruby/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:232:in `context'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135:in `call_app'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:30:in `block in call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `catch'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/usr/lib/ruby/vendor_ruby/rack/method_override.rb:22:in `call'
+/usr/lib/ruby/vendor_ruby/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+/usr/lib/ruby/vendor_ruby/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:225:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:658:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:472:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:332:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started PATCH "/posts/3" for 127.0.0.1 at 2020-01-14 15:01:06 -0300
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for PostsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+/usr/lib/ruby/vendor_ruby/rack/tempfile_reaper.rb:15:in `call'
+/usr/lib/ruby/vendor_ruby/rack/etag.rb:25:in `call'
+/usr/lib/ruby/vendor_ruby/rack/conditional_get.rb:38:in `call'
+/usr/lib/ruby/vendor_ruby/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:232:in `context'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135:in `call_app'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:30:in `block in call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `catch'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/usr/lib/ruby/vendor_ruby/rack/method_override.rb:22:in `call'
+/usr/lib/ruby/vendor_ruby/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+/usr/lib/ruby/vendor_ruby/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:225:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:658:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:472:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:332:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/" for 127.0.0.1 at 2020-01-14 15:01:12 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 87ms (Views: 73.3ms | ActiveRecord: 3.6ms)
+
+
+Started DELETE "/posts/3" for 127.0.0.1 at 2020-01-14 15:01:15 -0300
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for PostsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+/usr/lib/ruby/vendor_ruby/rack/tempfile_reaper.rb:15:in `call'
+/usr/lib/ruby/vendor_ruby/rack/etag.rb:25:in `call'
+/usr/lib/ruby/vendor_ruby/rack/conditional_get.rb:38:in `call'
+/usr/lib/ruby/vendor_ruby/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:232:in `context'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135:in `call_app'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:30:in `block in call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `catch'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/usr/lib/ruby/vendor_ruby/rack/method_override.rb:22:in `call'
+/usr/lib/ruby/vendor_ruby/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+/usr/lib/ruby/vendor_ruby/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:225:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:658:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:472:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:332:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:05:03 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/posts/5" for 127.0.0.1 at 2020-01-14 15:05:06 -0300
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for PostsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+/usr/lib/ruby/vendor_ruby/rack/tempfile_reaper.rb:15:in `call'
+/usr/lib/ruby/vendor_ruby/rack/etag.rb:25:in `call'
+/usr/lib/ruby/vendor_ruby/rack/conditional_get.rb:38:in `call'
+/usr/lib/ruby/vendor_ruby/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:232:in `context'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135:in `call_app'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:30:in `block in call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `catch'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/usr/lib/ruby/vendor_ruby/rack/method_override.rb:22:in `call'
+/usr/lib/ruby/vendor_ruby/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+/usr/lib/ruby/vendor_ruby/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:225:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:658:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:472:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:332:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started DELETE "/posts/3" for 127.0.0.1 at 2020-01-14 15:05:10 -0300
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for PostsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+/usr/lib/ruby/vendor_ruby/rack/tempfile_reaper.rb:15:in `call'
+/usr/lib/ruby/vendor_ruby/rack/etag.rb:25:in `call'
+/usr/lib/ruby/vendor_ruby/rack/conditional_get.rb:38:in `call'
+/usr/lib/ruby/vendor_ruby/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:232:in `context'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135:in `call_app'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:30:in `block in call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `catch'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/usr/lib/ruby/vendor_ruby/rack/method_override.rb:22:in `call'
+/usr/lib/ruby/vendor_ruby/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+/usr/lib/ruby/vendor_ruby/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:225:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:658:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:472:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:332:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started DELETE "/posts/5" for 127.0.0.1 at 2020-01-14 15:07:23 -0300
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for PostsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+/usr/lib/ruby/vendor_ruby/rack/tempfile_reaper.rb:15:in `call'
+/usr/lib/ruby/vendor_ruby/rack/etag.rb:25:in `call'
+/usr/lib/ruby/vendor_ruby/rack/conditional_get.rb:38:in `call'
+/usr/lib/ruby/vendor_ruby/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:232:in `context'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135:in `call_app'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:30:in `block in call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `catch'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/usr/lib/ruby/vendor_ruby/rack/method_override.rb:22:in `call'
+/usr/lib/ruby/vendor_ruby/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+/usr/lib/ruby/vendor_ruby/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:225:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:658:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:472:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:332:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/5/edit" for 127.0.0.1 at 2020-01-14 15:07:26 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:55
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (15.0ms)
+  Rendered posts/edit.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 46ms (Views: 42.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2020-01-14 15:07:28 -0300
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for PostsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+/usr/lib/ruby/vendor_ruby/rack/tempfile_reaper.rb:15:in `call'
+/usr/lib/ruby/vendor_ruby/rack/etag.rb:25:in `call'
+/usr/lib/ruby/vendor_ruby/rack/conditional_get.rb:38:in `call'
+/usr/lib/ruby/vendor_ruby/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:232:in `context'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135:in `call_app'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:30:in `block in call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `catch'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/usr/lib/ruby/vendor_ruby/rack/method_override.rb:22:in `call'
+/usr/lib/ruby/vendor_ruby/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+/usr/lib/ruby/vendor_ruby/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:225:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:658:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:472:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:332:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/5" for 127.0.0.1 at 2020-01-14 15:08:58 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:55
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:08:59 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 71ms (Views: 66.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2020-01-14 15:09:01 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:55
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 84ms (Views: 78.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2020-01-14 15:09:03 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:55
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (9.3ms)
+  Rendered posts/edit.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 82ms (Views: 76.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/posts/3" for 127.0.0.1 at 2020-01-14 15:09:05 -0300
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for PostsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+/usr/lib/ruby/vendor_ruby/rack/tempfile_reaper.rb:15:in `call'
+/usr/lib/ruby/vendor_ruby/rack/etag.rb:25:in `call'
+/usr/lib/ruby/vendor_ruby/rack/conditional_get.rb:38:in `call'
+/usr/lib/ruby/vendor_ruby/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:232:in `context'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135:in `call_app'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:30:in `block in call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `catch'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/usr/lib/ruby/vendor_ruby/rack/method_override.rb:22:in `call'
+/usr/lib/ruby/vendor_ruby/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+/usr/lib/ruby/vendor_ruby/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:225:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:658:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:472:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:332:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:09:09 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 86ms (Views: 82.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-14 15:09:11 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (9.5ms)
+  Rendered posts/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 90ms (Views: 86.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-01-14 15:09:12 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mTzk986anCX4RCjywqKskeMm+xmNlOFLIDzzxR7ewhTgJ+Yau9IjA9gDvFcQaflBrjfA/JLZfBUrtJ4JhWIZTg==", "post"=>{"title"=>"", "content"=>""}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:26
+  [1m[36mPost Create (2.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["content", ""], ["created_at", "2020-01-14 18:09:12.375051"], ["updated_at", "2020-01-14 18:09:12.375051"]]
+  ↳ app/controllers/posts_controller.rb:26
+  [1m[35m (18.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:26
+Redirected to http://localhost:3000/posts/6
+Completed 302 Found in 40ms (ActiveRecord: 20.7ms)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2020-01-14 15:09:12 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:55
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 48ms (Views: 41.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:09:15 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/posts/5" for 127.0.0.1 at 2020-01-14 15:09:44 -0300
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for PostsController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+/usr/lib/ruby/vendor_ruby/rack/tempfile_reaper.rb:15:in `call'
+/usr/lib/ruby/vendor_ruby/rack/etag.rb:25:in `call'
+/usr/lib/ruby/vendor_ruby/rack/conditional_get.rb:38:in `call'
+/usr/lib/ruby/vendor_ruby/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:232:in `context'
+/usr/lib/ruby/vendor_ruby/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135:in `call_app'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:30:in `block in call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `catch'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/usr/lib/ruby/vendor_ruby/rack/method_override.rb:22:in `call'
+/usr/lib/ruby/vendor_ruby/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+/usr/lib/ruby/vendor_ruby/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:225:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:658:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:472:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:332:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/5/edit" for 127.0.0.1 at 2020-01-14 15:11:37 -0300
+  
+SyntaxError (/home/kaibutsu/crumblr/app/controllers/posts_controller.rb:59: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/posts_controller.rb:59: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/posts/5/edit" for 127.0.0.1 at 2020-01-14 15:12:15 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (1.7ms)
+  Rendered posts/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 36ms (Views: 23.8ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/posts/5" for 127.0.0.1 at 2020-01-14 15:12:20 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R8qo3IL+eH6kWjEfGij/TNCuHmflku62cu2+h5FkZfnqYuh5z5oxIzQQns0SBhvzNIen5CIxmcdfYrVeVpEk1w==", "post"=>{"title"=>"something", "content"=>"something else1"}, "commit"=>"Update Post", "id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+  [1m[36mPost Update (1.3ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "something else1"], ["updated_at", "2020-01-14 18:12:20.908651"], ["id", 5]]
+  ↳ app/controllers/posts_controller.rb:34
+  [1m[35m (14.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 41ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2020-01-14 15:12:20 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 49ms (Views: 42.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:12:24 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 81ms (Views: 77.3ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/posts/5" for 127.0.0.1 at 2020-01-14 15:12:27 -0300
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gNHv72ZxBi0v4KgPdWiCZ9h4zHvfeaBiLmoLeMHaMIstea9KKxVPcL+qB919RmbYPFF1+Bja1xMD5QChBi9xpQ==", "id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:44
+  [1m[36mPost Destroy (0.8ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/posts_controller.rb:44
+  [1m[35m (21.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:44
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 38ms (ActiveRecord: 23.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:12:27 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/posts/6" for 127.0.0.1 at 2020-01-14 15:12:29 -0300
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nMiTe3ABtxJgjOStD8uzZW98GfYI3svYUGiCgIad2S0xYNPePWX+T/DGS38H5Vfai1Wgdc99vKl954lZQWiYAw==", "id"=>"6"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:44
+  [1m[36mPost Destroy (2.0ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/posts_controller.rb:44
+  [1m[35m (19.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:44
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 34ms (ActiveRecord: 21.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:12:29 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/posts/3" for 127.0.0.1 at 2020-01-14 15:12:31 -0300
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PalBe1WRjp/yljkxSOS1nZmdc/Y113BbkW5t+H7jbPOQAQHeGPXHwmLcluNAylEifbTKdfJ0Byq84WYhuRYt3Q==", "id"=>"3"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:44
+  [1m[36mPost Destroy (1.1ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/posts_controller.rb:44
+  [1m[35m (14.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:44
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 36ms (ActiveRecord: 16.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:12:31 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:15
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.4ms)
+
+
