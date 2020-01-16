@@ -1,3 +1,6 @@
-<h1>Welcome</h1>
-<p>This is as landing page for crumbler on Ruby</p>
-<p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+<% @posts.each do |post| %>
+    <h2>
+        <%= render 'posts/post', post: post %>
+    </h2>
+    <br><br><br><br>
+<% end %>

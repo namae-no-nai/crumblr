@@ -1884,3 +1884,2887 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:20:36 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 31ms (Views: 25.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-14 15:20:38 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (10.2ms)
+  Rendered posts/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 89ms (Views: 67.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-01-14 15:20:43 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N9yNeG9+ITCHLNbe3cTbDXhf1Fhji431Ql9E8yQFxNBOx4+VGjaeFqdrQnsPD47dNU7vvXzGEKtJ1yk/v7kfig==", "post"=>{"title"=>"asdf", "content"=>"aasd"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "asdf"], ["content", "aasd"], ["created_at", "2020-01-14 18:20:43.616047"], ["updated_at", "2020-01-14 18:20:43.616047"]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (17.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 30ms (ActiveRecord: 17.4ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at 2020-01-14 15:20:43 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 48ms (Views: 40.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:20:47 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 70ms (Views: 66.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:27:46 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 76ms (Views: 68.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:27:52 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-14 15:27:55 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2020-01-14 15:27:56 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 70ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:27:58 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 84ms (Views: 80.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2020-01-14 15:29:50 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 78ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:29:51 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 96ms (Views: 92.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-14 15:29:52 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 97ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:33:16 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 90ms (Views: 85.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-14 15:33:17 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (8.2ms)
+  Rendered posts/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-14 15:33:39 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (1.8ms)
+  Rendered posts/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-14 15:34:32 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (9.7ms)
+  Rendered posts/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 85ms (Views: 82.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-14 15:35:10 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (3.2ms)
+  Rendered posts/new.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/kaibutsu/crumblr/app/views/posts/_form.html.erb:25: syntax error, unexpected tLABEL, expecting '='
+...er.append=( form.submit, class:"btn btn-primary" );@output_b...
+...                         ^~~~~~):
+  
+app/views/posts/_form.html.erb:25: syntax error, unexpected tLABEL, expecting '='
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__1591745673202810261_69920370503840'
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-14 15:35:23 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (1.6ms)
+  Rendered posts/new.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/kaibutsu/crumblr/app/views/posts/_form.html.erb:25: syntax error, unexpected tLABEL, expecting '='
+...er.append=( form.submit, class: "btn btn-primary" );@output_...
+...                         ^~~~~~):
+  
+app/views/posts/_form.html.erb:25: syntax error, unexpected tLABEL, expecting '='
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__1591745673202810261_69920371215760'
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-14 15:35:55 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (6.2ms)
+  Rendered posts/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 76ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-14 15:36:04 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 72ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:36:05 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2020-01-14 15:36:06 -0300
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:36:07 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 97ms (Views: 93.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-14 15:36:08 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 103ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:36:36 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/posts/7" for 127.0.0.1 at 2020-01-14 15:36:39 -0300
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yLiX3HSOMJCY4fhdZr8SKX1ugiPfhvd3kTfU8/yQyiNlENd5Oep5zQirV49ukfaWmUc7oBglgAa8uN8qO2WLDQ==", "id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:44
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/posts_controller.rb:44
+  [1m[35m (14.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:44
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 24ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:36:39 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-14 15:36:41 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (3.4ms)
+  Rendered posts/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-01-14 15:36:47 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PsNBAGzmC1omTg8As1wqf37YTCcaXxrCw3UDb/FjUTFH2EPtGa60fAYJm6Vhl3+vM8l3wgUSh5zI/W6jat+Kaw==", "post"=>{"title"=>"uashdoauhadosh", "content"=>"shiahiosdahdisoadasahods"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Create (2.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "uashdoauhadosh"], ["content", "shiahiosdahdisoadasahods"], ["created_at", "2020-01-14 18:36:47.046513"], ["updated_at", "2020-01-14 18:36:47.046513"]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/8
+Completed 302 Found in 19ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/posts/8" for 127.0.0.1 at 2020-01-14 15:36:47 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/8" for 127.0.0.1 at 2020-01-14 15:38:21 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 85ms (Views: 78.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/8" for 127.0.0.1 at 2020-01-14 15:38:24 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 66ms (Views: 61.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/8/edit" for 127.0.0.1 at 2020-01-14 15:38:25 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (6.0ms)
+  Rendered posts/edit.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 84ms (Views: 77.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/posts/8" for 127.0.0.1 at 2020-01-14 15:38:26 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"taqUEkc1QN+r6ik9ZdfXOZTJAQjuo+p+BV72c0z6I2xtb6w6FDoGLZHRbU0BLNmHLshOhaKkcQ0krqkmTchdWA==", "post"=>{"title"=>"uashdoauhadosh", "content"=>"shiahiosdahdisoadasahods"}, "commit"=>"Submit", "id"=>"8"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+Redirected to http://localhost:3000/posts/8
+Completed 302 Found in 13ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/8" for 127.0.0.1 at 2020-01-14 15:38:26 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 55ms (Views: 48.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/8" for 127.0.0.1 at 2020-01-14 15:38:49 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 75ms (Views: 68.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:40:38 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 60ms (Views: 56.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/posts/8" for 127.0.0.1 at 2020-01-14 15:40:41 -0300
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DW3LclMVw3Bv6Vx/edvQBLqkJcwMs2Nuyg3PN0T55OOgxYvXHnGKLf+j861x9TS7Xo2cT8sQFB/ngsTugwylzQ==", "id"=>"8"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:44
+  [1m[36mPost Destroy (4.9ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/posts_controller.rb:44
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:44
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 29ms (ActiveRecord: 12.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 15:40:41 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-14 15:40:43 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (8.0ms)
+  Rendered posts/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 84ms (Views: 79.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-01-14 15:40:46 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JzTkWivF21p6JS+AwlNscknvZmklztxHfZz0c4cMD+teL+a3Xo1kfFpiuyUQmDmiBP5djDqDQRl2FJm/HLDUsQ==", "post"=>{"title"=>"adsdasds", "content"=>"asdddadasdsads"}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Create (1.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "adsdasds"], ["content", "asdddadasdsads"], ["created_at", "2020-01-14 18:40:46.653585"], ["updated_at", "2020-01-14 18:40:46.653585"]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/9
+Completed 302 Found in 22ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-14 15:40:46 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-14 15:40:48 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-14 15:40:49 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 59ms (Views: 51.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-14 15:42:44 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 79ms (Views: 73.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/9/edit" for 127.0.0.1 at 2020-01-14 15:47:06 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (6.0ms)
+  Rendered posts/edit.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 91ms (Views: 85.0ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/posts/9" for 127.0.0.1 at 2020-01-14 15:47:07 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MrOfdGsazerEuC40MNduZ+a09uqkWbeP3OG0KEMnsPc25A1uTlwLXnz614Dduimi5dx3RP7ZEEf5791wz0tE5g==", "post"=>{"title"=>"adsdasds", "content"=>"asdddadasdsads"}, "commit"=>"Submit", "id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+Redirected to http://localhost:3000/posts/9
+Completed 302 Found in 15ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-14 15:47:07 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (233.8ms)
+Completed 500 Internal Server Error in 242ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `simple' for #<#<Class:0x00007f2f24044a20>:0x00007f2f34a8ab00>):
+    11: </p>
+    12: 
+    13: <p>
+    14:   <%= simple.format @post.content %>
+    15: </p>
+    16: <p> 
+    17:   <%= @post.created_at.to_formated_s(:long) %>
+  
+app/views/posts/show.html.erb:14:in `_app_views_posts_show_html_erb__4511126910287139366_69920361853420'
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-14 15:48:44 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (337.7ms)
+Completed 500 Internal Server Error in 349ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `simple' for #<#<Class:0x00007f2f24044a20>:0x00007f2f36009148>):
+    11: </p>
+    12: 
+    13: <p>
+    14:   <%= simple.format @post.content %>
+    15: </p>
+    16: <p class: "text-muted">
+    17: <small> 
+  
+app/views/posts/show.html.erb:14:in `_app_views_posts_show_html_erb__4511126910287139366_69920373099840'
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-14 15:49:11 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (207.3ms)
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `simple' for #<#<Class:0x00007f2f24044a20>:0x00007f2f357a4ed0>):
+    11: </p>
+    12: 
+    13: <p>
+    14:   <%= simple.format @post.content %>
+    15: </p>
+    16: <p class: "text-muted">
+    17: <small> 
+  
+app/views/posts/show.html.erb:14:in `_app_views_posts_show_html_erb__4511126910287139366_69920368723620'
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-14 15:49:13 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (351.4ms)
+Completed 500 Internal Server Error in 363ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `simple' for #<#<Class:0x00007f2f24044a20>:0x00007f2f24164130>):
+    11: </p>
+    12: 
+    13: <p>
+    14:   <%= simple.format @post.content %>
+    15: </p>
+    16: <p class: "text-muted">
+    17: <small> 
+  
+app/views/posts/show.html.erb:14:in `_app_views_posts_show_html_erb__4511126910287139366_69920222815520'
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-14 15:49:17 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_formated_s' for Tue, 14 Jan 2020 18:40:46 UTC +00:00:Time
+Did you mean?  to_formatted_s):
+    15: </p>
+    16: <p class: "text-muted">
+    17: <small> 
+    18:   <%= Posted at @post.created_at.to_formated_s(:long) %>
+    19: <small>
+    20:   </p>
+  
+app/views/posts/show.html.erb:18:in `_app_views_posts_show_html_erb__4511126910287139366_69920323361280'
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-14 15:50:15 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `to_formated_s' for Tue, 14 Jan 2020 18:40:46 UTC +00:00:Time
+Did you mean?  to_formatted_s):
+    15: </p>
+    16: <p class: "text-muted">
+    17: <small> 
+    18:   Posted on <%= @post.created_at.to_formated_s(:long) %>
+    19: <small>
+    20:   </p>
+  
+app/views/posts/show.html.erb:18:in `_app_views_posts_show_html_erb__4511126910287139366_69920391146340'
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-14 15:50:35 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-14 15:51:01 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 42ms (Views: 37.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-14 15:59:54 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 51ms (Views: 32.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-14 15:59:57 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920222350600'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:01:16 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920364053420'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:01:17 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920372902320'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:01:18 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920222531640'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:01:18 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920364166300'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:01:19 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920372803140'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:01:19 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920374013720'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:01:19 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920363171880'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:01:20 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920371968540'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:01:20 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920373254360'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:01:21 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_47064038027760'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:01:21 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920369642460'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:01:21 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920323821940'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:01:22 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     
+    7:         <%= render 'posts/post' %>
+    8:     
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920390843320'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:00 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920365740220'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:01 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920289203320'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:01 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920373689240'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:01 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_47064038504900'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:02 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920368798580'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:02 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920322982100'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:02 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920222724540'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:02 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920362677740'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:03 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920369895320'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:03 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920323169760'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:04 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920222670340'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:04 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920361757720'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:04 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920367289160'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:05 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920289304040'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:06 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920373282900'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:02:06 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920391105120'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:03:48 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920364441240'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:03:49 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920370177660'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:03:50 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920322916440'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:03:52 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920373313220'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:03:53 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920390847300'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:13 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920363102340'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:14 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920366687580'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:15 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920372102380'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:16 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920323342480'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:16 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920373456200'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:16 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920390374120'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:17 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920524110600'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:17 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920365100100'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:17 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920368802080'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:17 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920372065900'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:17 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920322916760'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:18 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920324280660'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:18 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920373667080'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:18 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920222858640'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:18 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920391018640'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:19 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_47064025351420'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:19 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920362658080'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:04:19 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920373152860'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:05:22 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920365993900'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:05:23 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920368840300'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:09:14 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920370873980'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:09:15 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920364159120'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:09:15 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920372204760'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:09:15 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920375194280'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:09:40 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'post/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920225986760'
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 16:09:58 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-14 16:10:01 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (6.4ms)
+  Rendered posts/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 79ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-01-14 16:10:05 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zaFpmJDwohygYp0z1o/+3JAmAriFyEgSQ4We4v2Zu2y0umt15bgdOoAlCZYERKsM3Tc5XZqF1UxIDfMuZiVgNg==", "post"=>{"title"=>"asdadad", "content"=>"adasdasdadada"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Create (6.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "asdadad"], ["content", "adasdasdadada"], ["created_at", "2020-01-14 19:10:05.753564"], ["updated_at", "2020-01-14 19:10:05.753564"]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/10
+Completed 302 Found in 26ms (ActiveRecord: 18.2ms)
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2020-01-14 16:10:05 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:10:10 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'post/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920026164440'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:10:26 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920323422480'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:10:27 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920025581800'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:10:28 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920380840200'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:10:28 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920372888740'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:10:29 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920389651560'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:10:29 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920373477520'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:10:29 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920369218860'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:10:30 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920382369340'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:11:15 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/kaibutsu/crumblr/app/views/pages/welcome.html.erb:7: syntax error, unexpected tLABEL
+...@output_buffer.append=( render: 'posts/post', post: post );@...
+...                        ^~~~~~~
+/home/kaibutsu/crumblr/app/views/pages/welcome.html.erb:7: syntax error, unexpected ',', expecting ')'
+....append=( render: 'posts/post', post: post );@output_buffer....
+...                              ^):
+  
+app/views/pages/welcome.html.erb:7: syntax error, unexpected tLABEL
+app/views/pages/welcome.html.erb:7: syntax error, unexpected ',', expecting ')'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:13:29 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920229840120'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:13:58 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @Post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920386122660'
+Started GET "/posts/10" for 127.0.0.1 at 2020-01-14 16:14:17 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 56ms (Views: 50.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:14:21 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920222202600'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:14:25 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <p>This is as landing page for crumbler on Ruby</p>
+    3: <p>this page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholderthis page is a placeholder</p>
+    4: 
+    5: <% @post.each do |post| %>
+    6:     <h2>
+    7:         <%= render 'posts/post', post: post %>
+    8:     </h2>
+  
+app/views/pages/welcome.html.erb:5:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920389791280'
+Started GET "/posts/10" for 127.0.0.1 at 2020-01-14 16:14:34 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 40ms (Views: 36.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-14 16:14:36 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 85ms (Views: 81.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:15:32 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @post.each do |post| %>
+    2:     <h2>
+    3:         <%= render 'posts/post', post: post %>
+    4:     </h2>
+  
+app/views/pages/welcome.html.erb:1:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920390333880'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:15:47 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <%= @post.each do |post| %>
+    2:     <h2>
+    3:         <%= render 'posts/post', post: post %>
+    4:     </h2>
+  
+app/views/pages/welcome.html.erb:1:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920382138400'
+Started GET "/" for 127.0.0.1 at 2020-01-14 16:17:02 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @post.each do |post| %>
+    2:     <h2>
+    3:         <%= render 'posts/post', post: post %>
+    4:     </h2>
+  
+app/views/pages/welcome.html.erb:1:in `_app_views_pages_welcome_html_erb___2458216500934277625_69920026328720'
+Started GET "/" for 127.0.0.1 at 2020-01-16 17:48:45 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @post.each do |post| %>
+    2:     <h2>
+    3:         <%= render 'posts/post', post: post %>
+    4:     </h2>
+  
+app/views/pages/welcome.html.erb:1:in `_app_views_pages_welcome_html_erb__2426070429702037501_47207628310480'
+Started GET "/" for 127.0.0.1 at 2020-01-16 17:50:46 -0300
+Processing by PagesController#welcome as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `ApplicationRecord' for main:Object):
+  
+app/models/post.rb:1:in `<top (required)>'
+app/controllers/pages_controller.rb:6:in `welcome'
+Started GET "/" for 127.0.0.1 at 2020-01-16 17:51:02 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @post.each do |post| %>
+    2:     <h2>
+    3:         <%= render 'posts/post', post: post %>
+    4:     </h2>
+  
+app/views/pages/welcome.html.erb:1:in `_app_views_pages_welcome_html_erb__2426070429702037501_70021695749680'
+Started GET "/" for 127.0.0.1 at 2020-01-16 17:53:16 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/lib/ruby/vendor_ruby/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/lib/ruby/vendor_ruby/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/lib/ruby/vendor_ruby/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/lib/ruby/vendor_ruby/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/lib/ruby/vendor_ruby/did_you_mean/core_ext/name_error.rb:4
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/lib/ruby/vendor_ruby/did_you_mean/core_ext/name_error.rb:4
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/lib/ruby/vendor_ruby/did_you_mean/core_ext/name_error.rb:4
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /usr/lib/ruby/vendor_ruby/did_you_mean/core_ext/name_error.rb:4
+  Rendered pages/welcome.html.erb within layouts/application (190.0ms)
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:0x00007f5e649a7468>:0x00007f5e5c008248>
+Did you mean?  @posts):
+    1: <% post.each do |post| %>
+    2:     <h2>
+    3:         <%= render 'posts/post', post: post %>
+    4:     </h2>
+  
+app/views/pages/welcome.html.erb:1:in `_app_views_pages_welcome_html_erb__2426070429702037501_70021623596460'
+Started GET "/" for 127.0.0.1 at 2020-01-16 17:55:24 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/welcome.html.erb:1
+  Rendered posts/_post.html.erb (14.2ms)
+  Rendered posts/_post.html.erb (1.5ms)
+  Rendered pages/welcome.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 416ms (Views: 410.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-16 18:01:29 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/welcome.html.erb:1
+  Rendered posts/_post.html.erb (3.1ms)
+  Rendered posts/_post.html.erb (3.2ms)
+  Rendered pages/welcome.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 82ms (Views: 73.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-16 18:01:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:135:in `call_app'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:30:in `block in call'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `catch'
+/usr/lib/ruby/vendor_ruby/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+/usr/lib/ruby/vendor_ruby/rack/method_override.rb:22:in `call'
+/usr/lib/ruby/vendor_ruby/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+/usr/lib/ruby/vendor_ruby/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:225:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:658:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:472:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:332:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2020-01-16 18:01:55 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-16 18:13:12 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 75ms (Views: 69.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-16 18:13:16 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (52.9ms)
+  Rendered posts/new.html.erb within layouts/application (57.2ms)
+Completed 200 OK in 119ms (Views: 115.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-16 18:13:22 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/10/edit" for 127.0.0.1 at 2020-01-16 18:13:24 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (2.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (5.0ms)
+  Rendered posts/edit.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 75ms (Views: 47.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-16 18:13:31 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 53ms (Views: 48.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-01-16 18:13:34 -0300
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (11.9ms)
+  Rendered posts/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 64ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-01-16 18:13:46 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qRtGIdr1yTc8dYjRuGzkxfm0fplj+ggA3wZDw43gJG654RiKDo5+JY6ddm9xWG9lIOa5M/p+0Gt10vi1FqSs1Q==", "post"=>{"title"=>"well", "content"=>"whatever\r\n"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Create (6.0ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "well"], ["content", "whatever\r\n"], ["created_at", "2020-01-16 21:13:46.888209"], ["updated_at", "2020-01-16 21:13:46.888209"]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/11
+Completed 302 Found in 30ms (ActiveRecord: 17.1ms)
+
+
+Started GET "/posts/11" for 127.0.0.1 at 2020-01-16 18:13:46 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 25.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-16 18:14:50 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 79ms (Views: 75.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/11/edit" for 127.0.0.1 at 2020-01-16 18:14:52 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (6.4ms)
+  Rendered posts/edit.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 86ms (Views: 81.3ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/posts/11" for 127.0.0.1 at 2020-01-16 18:14:54 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SBrhpC811uykhSo+mAuR+XQCnySDRBdzrNjvBXjM3RBY4L8P+05h/hZt1IBRPxpZrVBYjhrAzxgGDFRz44hVqw==", "post"=>{"title"=>"well", "content"=>"whatever\r\n"}, "commit"=>"Submit", "id"=>"11"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+Redirected to http://localhost:3000/posts/11
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/11" for 127.0.0.1 at 2020-01-16 18:14:54 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-16 18:18:24 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/10/edit" for 127.0.0.1 at 2020-01-16 18:18:26 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (5.8ms)
+  Rendered posts/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 55ms (Views: 46.8ms | ActiveRecord: 1.7ms)
+
+
+Started PATCH "/posts/10" for 127.0.0.1 at 2020-01-16 18:18:28 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s8lnYLSOgwo4yS1W0cAI6AUxFxiJa56UCUk0IkFZqcOjMznLYPU0GIoh0+gY9INI3GPQshDvRv+jnY9U2h0heA==", "post"=>{"title"=>"asdadad", "content"=>"adasdasdadada"}, "commit"=>"Submit", "id"=>"10"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+Redirected to http://localhost:3000/posts/10
+Completed 302 Found in 17ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2020-01-16 18:18:28 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 22.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/10/edit" for 127.0.0.1 at 2020-01-16 18:18:30 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (2.3ms)
+  Rendered posts/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/10/edit" for 127.0.0.1 at 2020-01-16 18:20:32 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (4.6ms)
+  Rendered posts/edit.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 40ms (Views: 35.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/10/edit" for 127.0.0.1 at 2020-01-16 18:20:33 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (8.0ms)
+  Rendered posts/edit.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 99ms (Views: 87.9ms | ActiveRecord: 1.9ms)
+
+
+Started PATCH "/posts/10" for 127.0.0.1 at 2020-01-16 18:20:35 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ChKWgYRfkfOsrTBDDsZqzw+CmVHFpwqO54n9E4BY9rca6MgqUCQm4R5Fzv3H8uFv1tBe+1wj0uVNXUZlGxx+DA==", "post"=>{"title"=>"asdadad", "content"=>"adasdasdadada"}, "commit"=>"Submit", "id"=>"10"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+Redirected to http://localhost:3000/posts/10
+Completed 302 Found in 21ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2020-01-16 18:20:35 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 35ms (Views: 30.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2020-01-16 18:24:24 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 65ms (Views: 59.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2020-01-16 18:25:40 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/home/kaibutsu/crumblr/app/views/posts/show.html.erb:17: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/show.html.erb:17: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started PATCH "/posts/10" for 127.0.0.1 at 2020-01-16 18:25:44 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ChKWgYRfkfOsrTBDDsZqzw+CmVHFpwqO54n9E4BY9rca6MgqUCQm4R5Fzv3H8uFv1tBe+1wj0uVNXUZlGxx+DA==", "post"=>{"title"=>"asdadad", "content"=>"adasdasdadada"}, "commit"=>"Submit", "id"=>"10"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+Redirected to http://localhost:3000/posts/10
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2020-01-16 18:25:44 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/kaibutsu/crumblr/app/views/posts/show.html.erb:17: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/show.html.erb:17: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/posts" for 127.0.0.1 at 2020-01-16 18:26:13 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 77ms (Views: 72.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/10/edit" for 127.0.0.1 at 2020-01-16 18:26:15 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (10.4ms)
+  Rendered posts/edit.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 79ms (Views: 73.8ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/posts/10" for 127.0.0.1 at 2020-01-16 18:26:16 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uWxm6/WN8Lb4jf02Cm1CHmEs2DUI291/DLjFbmTST7epljhAIfZHpEplA4jDWcm+uH4fn5FfBRSmbH4Y/5bHDA==", "post"=>{"title"=>"asdadad", "content"=>"adasdasdadada"}, "commit"=>"Submit", "id"=>"10"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+Redirected to http://localhost:3000/posts/10
+Completed 302 Found in 12ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2020-01-16 18:26:16 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/home/kaibutsu/crumblr/app/views/posts/show.html.erb:17: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/show.html.erb:17: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started PATCH "/posts/10" for 127.0.0.1 at 2020-01-16 18:26:31 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uWxm6/WN8Lb4jf02Cm1CHmEs2DUI291/DLjFbmTST7epljhAIfZHpEplA4jDWcm+uH4fn5FfBRSmbH4Y/5bHDA==", "post"=>{"title"=>"asdadad", "content"=>"adasdasdadada"}, "commit"=>"Submit", "id"=>"10"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+Redirected to http://localhost:3000/posts/10
+Completed 302 Found in 22ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2020-01-16 18:26:31 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/kaibutsu/crumblr/app/views/posts/show.html.erb:17: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/show.html.erb:17: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/posts/10" for 127.0.0.1 at 2020-01-16 18:27:02 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/9/edit" for 127.0.0.1 at 2020-01-16 18:27:07 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (7.5ms)
+  Rendered posts/edit.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 83ms (Views: 77.3ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/posts/9" for 127.0.0.1 at 2020-01-16 18:27:09 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HPecnL3cWDlUqDoDVoOz9NnID9MjFxv6ctRjipSXbusMDcI3aafvK+ZAxL2ftzhUAJrIebqTw5HYANj8D9PmUA==", "post"=>{"title"=>"adsdasds", "content"=>"asdddadasdsads"}, "commit"=>"Submit", "id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+Redirected to http://localhost:3000/posts/9
+Completed 302 Found in 15ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-16 18:27:09 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 38ms (Views: 33.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-16 18:27:12 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 34ms (Views: 29.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-16 18:27:15 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 48ms (Views: 42.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-16 18:29:02 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-16 18:29:15 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    18:       <div class="page-header">
+    19:         <ul class="nav nav-pills pull-right"> 
+    20:           <li>
+    21:             <%= link_to "Home"/t, root_url %>
+    22:           </li>
+    23:           <li>
+    24:             <%= link_to "Manage Posts", posts_url %>
+  
+app/views/layouts/application.html.erb:21:in `_app_views_layouts_application_html_erb__1144202211640324035_70021639479900'
+Started GET "/posts" for 127.0.0.1 at 2020-01-16 18:29:27 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-16 18:33:41 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 81ms (Views: 71.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-16 18:33:51 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 67ms (Views: 63.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/9/edit" for 127.0.0.1 at 2020-01-16 18:37:25 -0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (8.4ms)
+  Rendered posts/edit.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 51ms (Views: 46.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/posts/9" for 127.0.0.1 at 2020-01-16 18:37:30 -0300
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F1y4rHDUca4qjguZTgVO7cZEnH5a95B2N7n738EMF4cHpuYHpK/GvJhm9SeHMcVNHxZb1MNzSB2dbUCpWkifPA==", "post"=>{"title"=>"adsdasds", "content"=>"asdddadasddada"}, "commit"=>"Submit", "id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+  [1m[36mPost Update (6.5ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "asdddadasddada"], ["updated_at", "2020-01-16 21:37:30.727872"], ["id", 9]]
+  ↳ app/controllers/posts_controller.rb:34
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:34
+Redirected to http://localhost:3000/posts/9
+Completed 302 Found in 29ms (ActiveRecord: 17.1ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-16 18:37:30 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (146.8ms)
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `on' for #<#<Class:0x00007f5e5e083b30>:0x00007f5e5d12d5a0>):
+    11: </p>
+    12: 
+    13: <p class="muted-text small">
+    14: <%= Posted on @post.created_at.to_formatted_s(:long) %>
+    15: </p>
+  
+app/views/posts/show.html.erb:14:in `_app_views_posts_show_html_erb__246408268486938940_70021632587400'
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-16 18:37:54 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (93.9ms)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `on' for #<#<Class:0x00007f5e5e083b30>:0x00007f5e5dca24f8>):
+    11: </p>
+    12: 
+    13: <p class="muted-text small">
+    14:  Posted <%= on @post.created_at.to_formatted_s(:long) %>
+    15: </p>
+  
+app/views/posts/show.html.erb:14:in `_app_views_posts_show_html_erb__246408268486938940_70021638592540'
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-16 18:38:16 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (104.2ms)
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `on' for #<#<Class:0x00007f5e5e083b30>:0x00007f5e55f98700>):
+    11: </p>
+    12: 
+    13: <p class="muted-text small">
+    14:  Posted <%= on @post.created_at.to_formatted_s(:long) %>
+    15: </p>
+  
+app/views/posts/show.html.erb:14:in `_app_views_posts_show_html_erb__246408268486938940_70021573036060'
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-16 18:38:21 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-16 18:38:27 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/welcome.html.erb:1
+  Rendered posts/_post.html.erb (1.7ms)
+  Rendered posts/_post.html.erb (1.0ms)
+  Rendered posts/_post.html.erb (0.6ms)
+  Rendered pages/welcome.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-16 18:44:28 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/welcome.html.erb:1
+  Rendered posts/_post.html.erb (4.7ms)
+  Rendered posts/_post.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (2.0ms)
+  Rendered pages/welcome.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 80ms (Views: 75.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-16 18:44:31 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/welcome.html.erb:1
+  Rendered posts/_post.html.erb (3.9ms)
+  Rendered posts/_post.html.erb (2.0ms)
+  Rendered posts/_post.html.erb (2.0ms)
+  Rendered pages/welcome.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 83ms (Views: 79.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-16 18:44:33 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/welcome.html.erb:1
+  Rendered posts/_post.html.erb (2.9ms)
+  Rendered posts/_post.html.erb (1.0ms)
+  Rendered posts/_post.html.erb (1.1ms)
+  Rendered pages/welcome.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-16 18:44:35 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/welcome.html.erb:1
+  Rendered posts/_post.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (1.6ms)
+  Rendered posts/_post.html.erb (1.4ms)
+  Rendered pages/welcome.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 72ms (Views: 68.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-16 18:44:55 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/welcome.html.erb:1
+  Rendered posts/_post.html.erb (3.9ms)
+  Rendered posts/_post.html.erb (1.4ms)
+  Rendered posts/_post.html.erb (1.9ms)
+  Rendered pages/welcome.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 81ms (Views: 77.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-16 18:44:57 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 71ms (Views: 65.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-16 18:45:02 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 64ms (Views: 58.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2020-01-16 18:45:15 -0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:52
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 68ms (Views: 60.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-16 18:45:16 -0300
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/welcome.html.erb:1
+  Rendered posts/_post.html.erb (4.2ms)
+  Rendered posts/_post.html.erb (1.9ms)
+  Rendered posts/_post.html.erb (1.9ms)
+  Rendered pages/welcome.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 79ms (Views: 75.4ms | ActiveRecord: 0.5ms)
+
+
